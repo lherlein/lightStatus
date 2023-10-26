@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/node-fetch": "^2.6.7",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
     "jest": "^29.7.0",
     "lint": "^0.8.19",
     "node-fetch": "^3.3.2",

@@ -12,5 +12,12 @@ export const lightsEndpoints = {
             "off": "http://lights-basement/cm?cmnd=POWER+OFF",
             "status": "http://lights-basement/cm?cmnd=POWER"
         }
+    },
+    "backyard": {
+        "commands": {
+            "on": "http://lights-backyard/cm?cmnd=POWER+ON",
+            "off": "http://lights-backyard/cm?cmnd=POWER+OFF",
+            "status": "http://lights-backyard/cm?cmnd=POWER"
+        }
     }
 }

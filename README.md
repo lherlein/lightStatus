@@ -31,3 +31,13 @@ const lightsEndpoints = {
     }
 }
 ```
+
+## CURL controls
+
+### Toggle backyard
+```bash
+curl http://lights-backyard/cm?cmnd=POWER+ON
+```
+```bash
+curl http://lights-backyard/cm?cmnd=POWER+OFF
+```

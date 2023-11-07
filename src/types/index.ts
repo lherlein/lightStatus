@@ -1,1 +1,0 @@
-export type apiResponse = {[key: string]: string}

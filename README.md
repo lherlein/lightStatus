@@ -41,3 +41,13 @@ curl http://lights-backyard/cm?cmnd=POWER+ON
 ```bash
 curl http://lights-backyard/cm?cmnd=POWER+OFF
 ```
+
+
+## pseudocode
+
+server.js starts server, invokes fetch-lights.js
+
+fetch-lights.js fetches lights status, returns to server.js
+
+server.js 
+

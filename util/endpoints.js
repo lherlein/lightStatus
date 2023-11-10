@@ -1,4 +1,4 @@
-export const lightsEndpoints = {
+const lightsEndpoints = {
     "pixley": {
         "commands": {
             "on": "http://lights-pixley/cm?cmnd=POWER+ON",
@@ -20,4 +20,8 @@ export const lightsEndpoints = {
             "status": "http://lights-backyard/cm?cmnd=POWER"
         }
     }
+}
+
+module.exports = {
+    lightsEndpoints
 }

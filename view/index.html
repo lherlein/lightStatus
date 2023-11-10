@@ -3,29 +3,50 @@
 <head>
     <title>Light Status</title>
     <style>
-        .box {
-            width: 200px;
-            height: 100px;
-            background-color: #f0f0f0;
-            margin: 20px;
-            padding: 10px;
-            border: 2px solid #333;
+        body {
+            text-align: center;
+            background-color: rgb(201, 201, 201)606;
+            z-index: 1;
+        }
+        .button {
+            margin: 10px;
+            border: 2px solid #2e2e2e;
+            text-align: center;
+            width: 30vw;
+            height: 10vh;
+            z-index: 999;
+            cursor: pointer;
+        }
+
+        #pixley-button {
+            background-color: #7700ff88;
+        }
+
+        #basement-button {
+            background-color: #00fff28a;
+        }
+
+        #backyard-button {
+            background-color: #ff880088;
         }
     </style>
 </head>
 <script type="module" src="/index.js"></script>
-<body style="background-color: white;">
-    <div class="box" id="pixley-status">
-        <h1>Pixley Light Status</h1>
-        <p id="status">Loading...</p>
-    </div>
-    <div class="box" id="basement-status">
-        <h1>Basement Light Status</h1>
-        <p id="status">Loading...</p>
-    </div>
-    <div class="box" id="backyard-status">
-        <h1>Backyard Light Status</h1>
-        <p id="status">Loading...</p>
-    </div>
+<body>
+    <button type="button" id="pixley-button" class="button" href="http://localhost:13500/">
+        <span>Pixley</span>
+        <br>
+        <span id="pixley-status">Loading...</span>
+    </button>
+    <button  type="button" id="basement-button" class="button" href="http://localhost:13500/">
+        <span>Basement</span>
+        <br>
+        <span id="basement-status">Loading...</span>
+    </button>
+    <button  type="button" id="backyard-button" class="button" href="http://localhost:13500/">
+        <span>Backyard</span>
+        <br>
+        <span id="backyard-status">Loading...</span>
+    </button>
 </body>
 </html>
